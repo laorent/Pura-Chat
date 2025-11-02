@@ -89,4 +89,3 @@ The easiest way to deploy this Next.js app is to use the [Vercel Platform](https
 -   `src/app/globals.css`: Global styles and Tailwind CSS theme configuration.
 -   `tailwind.config.ts`: Tailwind CSS configuration file.
 -   `.env.example`: Example file for required environment variables.
-
