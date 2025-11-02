@@ -1,6 +1,4 @@
 import { ChatLayout } from '@/components/chat/chat-layout';
-import { Button } from '@/components/ui/button';
-import { Github } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -25,11 +23,6 @@ export default function Home() {
             </div>
             <h1 className="text-xl font-semibold tracking-tight">Gemini Chat</h1>
           </div>
-          <Button variant="outline" size="icon" asChild>
-            <a href="https://github.com/google/generative-ai-docs/tree/main/demos/google-ai-nextjs-chat" target="_blank">
-              <Github size={16} />
-            </a>
-          </Button>
         </header>
         <ChatLayout />
       </div>
