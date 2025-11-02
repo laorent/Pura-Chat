@@ -114,7 +114,7 @@ export function ChatInput({
           onChange={onInputChange}
           onKeyDown={handleKeyDown}
           placeholder="Type your message..."
-          className="max-h-36 flex-1 resize-none self-center"
+          className="max-h-20 flex-1 resize-none self-center"
           rows={1}
           disabled={isLoading}
         />
