@@ -19,7 +19,11 @@ async function fileToGenerativePart(file: File): Promise<Part> {
   };
 }
 
-export function ChatLayout() {
+interface ChatLayoutProps {
+  password?: string;
+}
+
+export function ChatLayout({ password }: ChatLayoutProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [input, setInput] = useState('');
@@ -79,9 +83,14 @@ export function ChatLayout() {
     setImageFile(null);
 
     try {
+      const headers: HeadersInit = { 'Content-Type': 'application/json' };
+      if (password) {
+        headers['Authorization'] = `Bearer ${password}`;
+      }
+      
       const response = await fetch('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ messages: newMessages }),
       });
       
