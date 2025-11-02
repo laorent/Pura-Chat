@@ -1,4 +1,4 @@
-# Gemini Chat
+# Pura Chat
 
 This is a Next.js (App Router) chatbot web application that uses the Google Gemini API to provide a streaming, conversational AI experience. It is designed for easy deployment to Vercel.
 
@@ -8,6 +8,7 @@ This is a Next.js (App Router) chatbot web application that uses the Google Gemi
 - **Streaming Responses**: Real-time message streaming from Gemini for a dynamic user experience.
 - **Multimodal Input**: Supports text prompts and image uploads for analysis by Gemini's vision capabilities.
 - **Conversation History**: Maintains conversation context for follow-up questions.
+- **Password Protection (Optional)**: Secure your app with an access password using an environment variable.
 - **Clear Session**: A one-click button to clear the current chat history and start fresh.
 - **Web Search Integration**: The model can use Google Search to answer questions that require up-to-date information.
 - **Secure API Key Handling**: API keys are managed securely through environment variables, perfect for platforms like Vercel.
@@ -50,10 +51,14 @@ Follow these instructions to get a copy of the project up and running on your lo
       ```bash
       cp .env.example .env.local
       ```
-    - Open `.env.local` and add your Gemini API key:
+    - Open `.env.local` and add your Gemini API key and optional access password:
       ```
       GEMINI_API_KEY="YOUR_API_KEY_HERE"
       GEMINI_MODEL="gemini-2.5-flash"
+      
+      # (Optional) Set a password to protect access to the application.
+      # If commented out or left empty, the app will be publicly accessible.
+      NEXT_PUBLIC_APP_PASSWORD="your-secret-password"
       ```
 
 4.  **Run the development server:**
@@ -72,7 +77,8 @@ The easiest way to deploy this Next.js app is to use the [Vercel Platform](https
     - Go to your project's "Settings" tab and then "Environment Variables".
     - Add the `GEMINI_API_KEY` with your key.
     - (Optional) Add `GEMINI_MODEL` if you wish to use a different model than the default `gemini-2.5-flash`.
-4.  Click "Deploy". Your Gemini Chat app will be live!
+    - (Optional) Add `NEXT_PUBLIC_APP_PASSWORD` to set an access password for your deployed application.
+4.  Click "Deploy". Your Pura Chat app will be live!
 
 ## Code Structure
 
@@ -83,3 +89,4 @@ The easiest way to deploy this Next.js app is to use the [Vercel Platform](https
 -   `src/app/globals.css`: Global styles and Tailwind CSS theme configuration.
 -   `tailwind.config.ts`: Tailwind CSS configuration file.
 -   `.env.example`: Example file for required environment variables.
+
