@@ -8,7 +8,7 @@ import type { ChatMessage } from '@/lib/types';
 import type { Part, Content } from '@google/generative-ai';
 
 const API_KEY = process.env.GEMINI_API_KEY || '';
-const MODEL_NAME = process.env.GEMINI_MODEL || 'gemini-1.5-flash-latest';
+const MODEL_NAME = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 
 // Safety settings for the generative model
 const safetySettings = [

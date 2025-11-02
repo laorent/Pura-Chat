@@ -53,7 +53,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     - Open `.env.local` and add your Gemini API key:
       ```
       GEMINI_API_KEY="YOUR_API_KEY_HERE"
-      GEMINI_MODEL="gemini-1.5-flash-latest"
+      GEMINI_MODEL="gemini-2.5-flash"
       ```
 
 4.  **Run the development server:**
@@ -71,7 +71,7 @@ The easiest way to deploy this Next.js app is to use the [Vercel Platform](https
 3.  Configure the Environment Variables:
     - Go to your project's "Settings" tab and then "Environment Variables".
     - Add the `GEMINI_API_KEY` with your key.
-    - (Optional) Add `GEMINI_MODEL` if you wish to use a different model than the default `gemini-1.5-flash-latest`.
+    - (Optional) Add `GEMINI_MODEL` if you wish to use a different model than the default `gemini-2.5-flash`.
 4.  Click "Deploy". Your Gemini Chat app will be live!
 
 ## Code Structure
