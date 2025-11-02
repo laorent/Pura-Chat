@@ -29,9 +29,9 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
               <path d="M12 4.5v3M15 6l-3 3M18 7.5l-3 3M21 12h-3M18 16.5l-3-3M15 18l-3-3M12 19.5v-3M9 18l3-3M6 16.5l3-3M3 12h3M6 7.5l3 3M9 6l3 3" />
             </svg>
           </div>
-          <h2 className="text-2xl font-semibold">Hello! How can I help you today?</h2>
+          <h2 className="text-2xl font-semibold">你好！有什么可以帮您？</h2>
           <p className="max-w-md text-muted-foreground">
-            You can ask me anything, or upload an image for analysis. I can also search the web for up-to-date information.
+            您可以问我任何问题，或者上传图片进行分析。我也可以搜索网络以获取最新信息。
           </p>
         </div>
       )}
