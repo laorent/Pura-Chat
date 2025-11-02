@@ -124,7 +124,7 @@ export function ChatInput({
         </Button>
       </form>
       <p className="mt-2 text-center text-xs text-muted-foreground">
-        Powered by Google Gemini.
+        Powered by pura
       </p>
     </div>
   );
