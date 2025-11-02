@@ -21,7 +21,7 @@ export default function Home() {
                 <path d="M12 4.5v3M15 6l-3 3M18 7.5l-3 3M21 12h-3M18 16.5l-3-3M15 18l-3-3M12 19.5v-3M9 18l3-3M6 16.5l3-3M3 12h3M6 7.5l3 3M9 6l3 3" />
               </svg>
             </div>
-            <h1 className="text-xl font-semibold tracking-tight">Gemini Chat</h1>
+            <h1 className="text-xl font-semibold tracking-tight">Pura Chat</h1>
           </div>
         </header>
         <ChatLayout />

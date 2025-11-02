@@ -6,7 +6,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'Gemini Chat',
+  title: 'Pura Chat',
   description: 'A streaming chat application powered by Google Gemini.',
 };
 
